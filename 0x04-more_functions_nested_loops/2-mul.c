@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  *mul - multiplies two ints.
- *@a and @b: integers.
+ *@a: integer.
+ *@b: integer.
  *
  *Return: product.
  */
