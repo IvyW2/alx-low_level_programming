@@ -1,23 +1,21 @@
 #include "main.h"
-#include <stdio.h>
-/**
- * print_array - update value.
- * @a: value to be evaluate.
- * @n: value to be evaluate.
- *
- * Return: nothing.
- */
-void print_array(int *a, int n)
-{
-	int x;
 
-	for (x = 0 ; x < n; x++)
+/**
+ * _strcpy - copies the string pointed to by src into dest
+ * @dest: destination
+ * @src: source
+ * Return: char with copy of string
+ */
+
+char *_strcpy(char *dest, char *src)
+{
+	int i;
+
+	for (i = 0; *(src + i) != '\0'; i++)
 	{
-		printf("%d", a[x]);
-		if (x != n - 1)
-		{
-			printf(", ");
-		}
+		dest[i] = *(src + i);
 	}
-	printf("\n");
+	dest[i] = '\0';
+
+	return (dest);
 }

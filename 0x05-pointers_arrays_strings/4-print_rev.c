@@ -1,14 +1,20 @@
 #include "main.h"
 /**
- * main - check the code for Holberton School students.
+ * print_rev -  function that prints a string, in reverse
+ * @s: value taken from main
  *
- * Return: Always 0.
+ * Return: (0)
  */
-int main(void)
+void print_rev(char *s)
 {
-	char *str;
+	int len;
 
-	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-	print_rev(str);
-	return (0);
+	for (len = 0; s[len] != '\0'; len++)
+	{
+	}
+	for (len = len - 1; len >= 0; len--)
+	{
+		_putchar(s[len]);
+	}
+	_putchar('\n');
 }
