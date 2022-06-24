@@ -12,19 +12,19 @@ int _strlen(char *s)
 		length++;
 	return (length);
 }
+
 /**
- * _strncat - appends not more than @n characters
- * @dest: string @src is appended here
- * @src: string @dest is appended to
- * @n: length of string should be less than this value
- * Return: appendes string
+ * _strcat - appends a string to another
+ * @src: string to append
+ * @dest: string to append to
+ * Return: appended string
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
 	int dest_len = _strlen(dest);
 	int i;
 
-	for (i = 0 ; i < n && src[i] != '\0' ; i++)
+	for (i = 0; src[i] != '\0'; i++)
 		dest[dest_len + i] = src[i];
 	dest[dest_len + i] = '\0';
 	return (dest);
